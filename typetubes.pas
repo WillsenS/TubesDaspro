@@ -15,47 +15,47 @@ type
 
 	bahanMentah = record
 		NamaBahanMentah			: string;
-		HargaSatuan				: longint;
+		HargaSatuan			: longint;
 		DurasiKadaluarsa		: integer;
 	end;
 	
 	tabBahanMentah = record
-		tab		: array [arrMin..arrMax] of bahanMentah;
+		tab	: array [arrMin..arrMax] of bahanMentah;
 		neff	: integer;
 	end;
 	
 	bahanOlahan = record
 		NamaBahanOlahan		: string;
-		HargaJual			: longint;
-		JumlahBahan			: integer;
-		Bahan				: array [arrMin..arrMax] of string; 
+		HargaJual		: longint;
+		JumlahBahan		: integer;
+		Bahan			: array [arrMin..arrMax] of string; 
 		//Durasi kadaluarsa 3 hari
 	end;
 	
 	tabBahanOlahan = record
-		tab		: array [arrMin..arrMax] of bahanOlahan;
+		tab	: array [arrMin..arrMax] of bahanOlahan;
 		neff	: integer;
 	end;
 	
 	inventoriBahanMentah = record
 		NamaBahanMentah		: string;
-		TanggalBeli			: tanggal;	
-		Jumlah				: integer;
+		TanggalBeli		: tanggal;	
+		Jumlah			: integer;
 	end;
 	
 	tabInventoriBahanMentah = record
-		tab		: array [arrMin..arrMax] of inventoriBahanMentah;
+		tab	: array [arrMin..arrMax] of inventoriBahanMentah;
 		neff	: integer;
 	end;
 	
 	inventoriBahanOlahan = record
 		NamaBahanOlahan		: string;
-		TanggalBuat			: tanggal;
-		Jumlah				: integer;
+		TanggalBuat		: tanggal;
+		Jumlah			: integer;
 	end;
 	
 	tabInventoriBahanOlahan = record
-		tab		: array [arrMin..arrMax] of inventoriBahanOlahan;
+		tab	: array [arrMin..arrMax] of inventoriBahanOlahan;
 		neff	: integer;
 	end;
 	
@@ -67,27 +67,27 @@ type
 	end;
 	
 	tabResep = record
-		tab		: array [arrMin..arrMax] of resep;
+		tab	: array [arrMin..arrMax] of resep;
 		neff	: integer;
 	end;
 	
 	simulasi = record
-		NomorSimulasi					: integer;
-		Tanggal							: tanggal;
-		JumlahHariHidup					: integer;
-		JumlahEnergi					: integer;
+		NomorSimulasi				: integer;
+		Tanggal					: tanggal;
+		JumlahHariHidup				: integer;
+		JumlahEnergi				: integer;
 		KapasitasMaksimumInventori		: integer;
 		TotalBahanMentahDibeli			: integer;
 		TotalBahanOlahanDibuat			: integer;
 		TotalBahanOlahanDijual			: integer;
-		TotalResepDijual				: integer;
-		TotalPemasukan					: longint;
-		TotalPengeluaran				: longint;
-		TotalUang						: longint;
+		TotalResepDijual			: integer;
+		TotalPemasukan				: longint;
+		TotalPengeluaran			: longint;
+		TotalUang				: longint;
 	end;
 	
 	tabSimulasi	= record
-		tab		: array [arrMin..arrMax] of simulasi;
+		tab	: array [arrMin..arrMax] of simulasi;
 		neff	: integer;
 	end;
 	
