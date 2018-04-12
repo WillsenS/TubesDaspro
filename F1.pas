@@ -37,13 +37,6 @@ implementation
 		v1 : longint;
 		i,j : integer;
 		
-		tBahanMentah : tabBahanMentah;
-		tBahanOlahan : tabBahanOlahan;
-		tInventoriBahanMentah : tabInventoriBahanMentah;
-		tInventoriBahanOlahan : tabInventoriBahanOlahan;
-		tResep : tabResep;
-		tSimulasi : tabSimulasi;
-		
 	begin
 		{Membaca file BahanMentah.dat}
 		assign(f_mentah, 'BahanMentah.dat');
