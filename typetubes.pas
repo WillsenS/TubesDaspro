@@ -1,3 +1,6 @@
+// Nama		: Bram Musuko P
+// Tanggal	: 9 - April - 2018
+
 unit typetubes;
 
 interface
@@ -25,10 +28,11 @@ type
 	end;
 	
 	bahanOlahan = record
-		NamaBahanOlahan	: string;
-		HargaJual		: longint;
-		JumlahBahan		: integer;
-		Bahan			: array [arrMin..arrMax] of string; 
+		NamaBahanOlahan		: string;
+		HargaJual			: longint;
+		JumlahBahan			: integer;
+		Bahan				: array [arrMin..arrMax] of string;
+		DurasiKadaluarsa	: integer // gw tambahin ya  
 		//Durasi kadaluarsa 3 hari
 	end;
 	
@@ -92,12 +96,19 @@ type
 		TotalPemasukan					: longint;
 		TotalPengeluaran				: longint;
 		TotalUang						: longint;
+		{ Variabel diluar file eksternal }
+		JumlahIstirahat					: integer;
+		JumlahMakan						: integer;
+		JumlahAksi						: integer;
 	end;
 	
 	tabSimulasi	= record
 		tab	: array [arrMin..arrMax] of simulasi;
 		neff	: integer;
 	end;
+	
+	var
+	s : integer; // simulasi ke-berapa
 	
 implementation
 
