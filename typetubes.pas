@@ -1,4 +1,4 @@
-// Nama		: Bram Musuko P
+// Nama		: Louis Cahyadi, Norris
 // Tanggal	: 9 - April - 2018
 
 unit typetubes;
@@ -49,7 +49,7 @@ type
 	
 	tabInventoriBahanMentah = record
 		kapasitas: integer;
-		tab	: array of inventoriBahanMentah; 
+		tab	: array[arrMin..arrMax] of inventoriBahanMentah; 
 		//Pembuatan array ini harus dinamis krn inventori dapat diperbesar.
 		//Karena itu besar array tidak dapat didefinisikan sekarang, apalagi dengan konstanta arrMax yang tidak dapat diubah.
 		//Pembuatan array ini harus dilakukan dengan fungsi bawaan Pascal: SetLength(tabInventoriBahanMentah,kapasitas)
@@ -64,7 +64,7 @@ type
 	
 	tabInventoriBahanOlahan = record
 		kapasitas: integer;
-		tab	: array of inventoriBahanOlahan;
+		tab	: array[arrMin..arrMax] of inventoriBahanOlahan;
 		//Pembuatan array ini harus dinamis krn inventori dapat diperbesar.
 		//Karena itu besar array tidak dapat didefinisikan sekarang, apalagi dengan konstanta arrMax yang tidak dapat diubah.
 		//Pembuatan array ini harus dilakukan dengan fungsi bawaan Pascal: SetLength(tabInventoriBahanOlahan,kapasitas)
