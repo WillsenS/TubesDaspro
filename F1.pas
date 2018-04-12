@@ -1,3 +1,7 @@
+//Nama : Louis Cahyadi
+//Versi : 10 April 2018
+
+
 unit F1;
 
 interface
@@ -6,7 +10,7 @@ interface
 	procedure load(var tBahanMentah : tabBahanMentah; var tBahanOlahan : tabBahanOlahan;
 					var tInventoriBahanMentah : tabInventoriBahanMentah;
 					var tInventoriBahanOlahan : tabInventoriBahanOlahan;
-					var tResep : tabResep; var tSimulasi : tabSimulasi;)
+					var tResep : tabResep; var tSimulasi : tabSimulasi);
 	//I.S. : Semua data internal(array) masih kosong.
 	//F.S. : Semua data dari file telah di load ke data internal(array).
 
@@ -14,7 +18,7 @@ implementation
 	procedure load(var tBahanMentah : tabBahanMentah; var tBahanOlahan : tabBahanOlahan;
 					var tInventoriBahanMentah : tabInventoriBahanMentah;
 					var tInventoriBahanOlahan : tabInventoriBahanOlahan;
-					var tResep : tabResep; var tSimulasi : tabSimulasi;)
+					var tResep : tabResep; var tSimulasi : tabSimulasi);
 
 	var
 		f_mentah : text;
@@ -135,7 +139,7 @@ implementation
 			//Membaca jumlah
 			val(data, v1, e);
 			inventoriMentah.Jumlah := v1;
-			
+
 			//Masukan ke data internal (array)
 			tInventoriBahanMentah.neff := tInventoriBahanMentah.neff + 1;
 			tInventoriBahanMentah.tab[tInventoriBahanMentah.neff] := inventoriMentah;
